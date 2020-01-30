@@ -6,7 +6,8 @@ import PackageDescription
 let package = Package(
     name: "Kabigon",
     products: [
-    .executable(name: "kabigon", targets: ["Kabigon"])
+        .executable(name: "kabigon", targets: ["Kabigon"]),
+        .executable(name: "snorlax", targets: ["Kabigon"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
