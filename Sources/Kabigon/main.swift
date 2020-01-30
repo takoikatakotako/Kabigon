@@ -1,7 +1,6 @@
 import Foundation
 import func Foundation.fflush
 import let Foundation.stdout
-import Dispatch
 
 
 private func output(_ value: String) {
@@ -10,29 +9,22 @@ private func output(_ value: String) {
 }
 
 output("\u{001B}[?25l")
-output("(￣ー￣)   ")
-Thread.sleep(forTimeInterval: 0.3)
-output("\r")
-output("(￣ー￣)Z  ")
-Thread.sleep(forTimeInterval: 0.3)
-output("\r")
-output("(￣ー￣)ZZ ")
-Thread.sleep(forTimeInterval: 0.3)
-output("\r")
-output("(￣ー￣)ZZZ")
-Thread.sleep(forTimeInterval: 0.3)
-output("\r")
-output("(￣ー￣)   ")
-Thread.sleep(forTimeInterval: 0.3)
-output("\r")
-output("(￣ー￣)Z  ")
-Thread.sleep(forTimeInterval: 0.3)
-output("\r")
-output("(￣ー￣)ZZ ")
-Thread.sleep(forTimeInterval: 0.3)
-output("\r")
-output("(￣ー￣)ZZZ")
-Thread.sleep(forTimeInterval: 0.3)
+
+for _ in 0..<3 {
+    output("\r")
+    output("(￣ー￣)   ")
+    Thread.sleep(forTimeInterval: 0.3)
+    output("\r")
+    output("(￣ー￣)Z  ")
+    Thread.sleep(forTimeInterval: 0.3)
+    output("\r")
+    output("(￣ー￣)ZZ ")
+    Thread.sleep(forTimeInterval: 0.3)
+    output("\r")
+    output("(￣ー￣)ZZZ")
+    Thread.sleep(forTimeInterval: 0.3)
+}
+
 output("\n")
 output("\u{001B}[?25h")
 
