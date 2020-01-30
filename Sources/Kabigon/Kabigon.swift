@@ -61,9 +61,9 @@ class Kabigon {
             newLine()
             Thread.sleep(forTimeInterval: 0.3)
         }
+        clear()
+        newLine()
         hideCursor(false)
-//        clear()
-//        newLine()
     }
     
     private func version() {
