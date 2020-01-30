@@ -10,3 +10,8 @@ $ swift package generate-xcodeproj
 
 $ swift build   
 $ .build/debug/Kabigon
+
+
+$ kabigon
+$ kabigon -b
+$ kabigon -v
